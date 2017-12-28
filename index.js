@@ -1,8 +1,7 @@
 let store = []
 
-class Customer = {
+class Customer {
   constructor(name) {
     this.name = name
   }
 }
-
