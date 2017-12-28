@@ -16,7 +16,7 @@ let deliveryId = 0
 
       customer() {
         return store.customers.find(function(customerId){
-          console.log(store.customers['id'])// === customerId 
+          console.log(store.customers['id'] === 5)// === customerId 
         })
       }
     }
