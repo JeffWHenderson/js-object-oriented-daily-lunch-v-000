@@ -36,7 +36,7 @@ class Customer {
   }
 
   totalSpent() {
-    return store.customers
+    console.log(this.meals())
   }
 
   deliveries() {
