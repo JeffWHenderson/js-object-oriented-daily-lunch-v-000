@@ -91,6 +91,10 @@ class Employer {
     store.employers.push(this)
   }
 
+  allMeals() {
+    return this.deliveries().map(delivery => delivery.meal());
+  }
+  
   mealTotals() {
    return this.allMeals().reduce((totals, meal) => {
      totals[meal.id] = totals[meal.id] || 0;
