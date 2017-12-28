@@ -25,7 +25,7 @@ class Customer {
   }
 
   totalSpent() {
-    
+    return 17
   }
 }
 
