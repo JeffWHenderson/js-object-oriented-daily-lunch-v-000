@@ -42,4 +42,8 @@ class Meal {
 
     store.meals.push(this)
   }
+
+  byPrice() {
+    
+  }
 }
