@@ -32,7 +32,7 @@ class Customer {
     this.id = ++customerId
     this.name = name
     this.employerId = employer.id
-    
+
     store.customers.push(this)
   }
 
@@ -93,5 +93,9 @@ class Employer {
     return store.customers.filter(customer => {
       return customer.employerId === this.id
     })
+  }
+
+  deliveries(){
+    return this.employees().deliveries()
   }
 }
