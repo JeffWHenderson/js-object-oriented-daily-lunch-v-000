@@ -97,7 +97,7 @@ class Employer {
 
   deliveries(){
     return this.employees().map(employee => {
-      return employee.id
+      return employee.id === store.deliveries.customerId
     })
   }
 }
