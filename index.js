@@ -1,1 +1,4 @@
 let store = []
+class Delivery {
+  
+}
