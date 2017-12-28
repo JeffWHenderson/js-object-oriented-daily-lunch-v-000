@@ -52,15 +52,6 @@ class Customer {
   }
 }
 
-class Employer {
-  constructor(name) {
-    this.id = ++employerId
-    this.name = name
-
-    store.employers.push(this)
-  }
-}
-
 class Meal {
   constructor(title, price) {
     this.id = ++mealId
@@ -86,5 +77,14 @@ class Meal {
     return this.deliveries().map(delivery => {
       return delivery.customer()
     })
+  }
+}
+
+class Employer {
+  constructor(name) {
+    this.id = ++employerId
+    this.name = name
+
+    store.employers.push(this)
   }
 }
