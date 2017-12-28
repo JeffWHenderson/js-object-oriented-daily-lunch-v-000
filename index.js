@@ -66,7 +66,7 @@ class Meal {
 
   deliveries(){
     return store.deliveries.filter(meal => {
-      console.log(delivery.mealId === this.id)
+      return delivery.mealId === this.id
     })
   }
 }
