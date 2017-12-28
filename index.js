@@ -15,9 +15,8 @@ let deliveryId = 0
       }
 
       customer() {
-        return store.customers.find(function(customer
-          console.log(this)
-          return customer.id === `${this.customerId}`
+        return store.customers.find((customer => {
+          return customer.id === this.customerId
         })
       }
     }
