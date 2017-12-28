@@ -19,6 +19,6 @@ class Employer {
     this.id = ++employerId
     this.name = name
 
-    store.customers.push(this)
+    store.employers.push(this)
   }
 }
