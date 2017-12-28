@@ -5,6 +5,17 @@ let customerId = 0
 let employerId = 0
 let deliveryId = 0
 
+    class Delivery {
+      constructor(meal, customer) {
+        this.id = ++deliveryId
+        this.mealId = meal.id
+        this.customerId = customer.id
+
+        store.deliveries.push(this)
+      }
+      
+    }
+
 class Customer {
   constructor(name) {
     this.id = ++customerId
@@ -32,12 +43,4 @@ class Meal {
     store.meals.push(this)
   }
 }
-class Delivery {
-  constructor(meal, customer) {
-    this.id = ++deliveryId
-    this.meal = meal
-    this.customer = customer
 
-    store.deliveries.push(this)
-  }
-}
