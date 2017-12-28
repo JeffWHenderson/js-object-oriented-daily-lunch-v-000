@@ -25,7 +25,7 @@ class Customer {
   }
 
   totalSpent() {
-    console.log(17)
+    console.log(store.customers)
   }
 }
 
