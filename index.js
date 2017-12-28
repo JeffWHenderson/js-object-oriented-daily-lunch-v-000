@@ -96,6 +96,8 @@ class Employer {
   }
 
   deliveries(){
-    return this.employees().deliveries()
+    return this.employees().map(employee => {
+      return 1
+    })
   }
 }
