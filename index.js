@@ -87,4 +87,8 @@ class Employer {
 
     store.employers.push(this)
   }
+
+  employees(){
+    
+  }
 }
