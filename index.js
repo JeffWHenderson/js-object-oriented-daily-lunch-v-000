@@ -13,10 +13,10 @@ let deliveryId = 0
 
         store.deliveries.push(this)
       }
-console.log(store.customers.customer['id'] === 5)
+      console.log(store.customers.customer['id'] === 5)
       // customer() {
       //   return store.customers.find(function(customerId){
-      //     console.log(store.customers.customer['id'] === 5)// === customerId 
+      //     console.log(store.customers.customer['id'] === 5)// === customerId
       //   })
       // }
     }
