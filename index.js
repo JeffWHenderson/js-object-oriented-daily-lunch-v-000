@@ -37,7 +37,9 @@ class Customer {
   }
 
   totalSpent() {
-    console.log(this.meals())
+    return this.meals().reduce(function(sum, meal) {
+      return sum + meal.price;
+    }, 0);
   }
 
   deliveries() {
@@ -121,7 +123,7 @@ class Employer {
     let allMeals = this.deliveries().map(delivery => {
       return delivery.meal();
     });
-    
+
     let uniqueMeals = [...new Set(allMeals)];
     return uniqueMeals;
   }
