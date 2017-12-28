@@ -36,7 +36,7 @@ class Customer {
   }
 
   totalSpent() {
-    console.log(this.meals().map(meal => {meal.price}))
+    console.log(this.meals())
   }
 
   deliveries() {
