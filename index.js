@@ -9,6 +9,6 @@ class Customer {
   constructor(name) {
     this.name = name
 
-    store.customer.push(this)
+    store.customers.push(this)
   }
 }
