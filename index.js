@@ -90,6 +90,8 @@ class Employer {
   }
 
   employees(){
-    return store.customers
+    return store.customers.filter(customer => {
+      return customer.employerId === this.id
+    })
   }
 }
