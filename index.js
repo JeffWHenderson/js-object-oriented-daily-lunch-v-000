@@ -37,9 +37,9 @@ class Customer {
   }
 
   totalSpent() {
-    return this.meals().reduce(function(sum, meal) {
-      return sum + meal.price;
-    }, 0);
+    // return this.meals().reduce(function(sum, meal) {
+    //   return sum + meal.price;
+    // }, 0);
   }
 
   deliveries() {
@@ -92,17 +92,17 @@ class Employer {
   }
 
   mealTotals() {
-    let allMeals = this.deliveries().map(delivery => {
-      return delivery.meal();
-    });
-    let summaryObject = {};
-    allMeals.forEach(function(meal) {
-      summaryObject[meal.id] = 0;
-    });
-    allMeals.forEach(function(meal) {
-      summaryObject[meal.id] += 1;
-    });
-    return summaryObject;
+    // let allMeals = this.deliveries().map(delivery => {
+    //   return delivery.meal();
+    // });
+    // let summaryObject = {};
+    // allMeals.forEach(function(meal) {
+    //   summaryObject[meal.id] = 0;
+    // });
+    // allMeals.forEach(function(meal) {
+    //   summaryObject[meal.id] += 1;
+    // });
+    // return summaryObject;
   }
 
   employees(){
