@@ -36,7 +36,11 @@ class Customer {
   }
 
   totalSpent() {
-    console.log(store.customers)
+    return store.customers
+  }
+
+  deliveries() {
+    
   }
 }
 
