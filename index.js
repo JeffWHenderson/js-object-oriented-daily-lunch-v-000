@@ -25,7 +25,7 @@ class Customer {
   }
 
   totalSpent() {
-    return 17
+    console.log(store.customers.filter(this.id))
   }
 }
 
