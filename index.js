@@ -36,11 +36,10 @@ class Customer {
     store.customers.push(this)
   }
 
-  totalSpent() {
-    return 17
-    // return this.meals().reduce(function(sum, meal) {
-    //   return sum + meal.price;
-    // }, 0);
+  totalSpent(){
+    return this.meals().reduce(function(sum, theMeal){
+      return sum + theMeal.price;
+    }, 0)
   }
 
   deliveries() {
@@ -97,13 +96,16 @@ class Employer {
     // let allMeals = this.deliveries().map(delivery => {
     //   return delivery.meal();
     // });
+    
     // let summaryObject = {};
     // allMeals.forEach(function(meal) {
     //   summaryObject[meal.id] = 0;
     // });
+    
     // allMeals.forEach(function(meal) {
     //   summaryObject[meal.id] += 1;
     // });
+    
     // return summaryObject;
   }
 
