@@ -6,14 +6,14 @@ let employerId = 0
 let deliveryId = 0
 
     class Delivery {
-      constructor(meal, customer) {
+      constructor(meal = {}, customer = {}) {
         this.id = ++deliveryId
         this.mealId = meal.id
         this.customerId = customer.id
 
         store.deliveries.push(this)
       }
-      
+
     }
 
 class Customer {
@@ -43,4 +43,3 @@ class Meal {
     store.meals.push(this)
   }
 }
-
