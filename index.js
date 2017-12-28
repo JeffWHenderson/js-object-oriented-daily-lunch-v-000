@@ -92,22 +92,13 @@ class Employer {
   }
 
   mealTotals() {
-    return 2
-    // let allMeals = this.deliveries().map(delivery => {
-    //   return delivery.meal();
-    // });
+   return this.allMeals().reduce((totals, meal) => {
+     totals[meal.id] = totals[meal.id] || 0;
+     totals[meal.id] += 1;
 
-    // let summaryObject = {};
-    // allMeals.forEach(function(meal) {
-    //   summaryObject[meal.id] = 0;
-    // });
-
-    // allMeals.forEach(function(meal) {
-    //   summaryObject[meal.id] += 1;
-    // });
-
-    // return summaryObject;
-  }
+     return totals;
+   }, {});
+ }
 
   employees(){
     return store.customers.filter(customer => {
