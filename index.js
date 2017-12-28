@@ -23,6 +23,10 @@ class Customer {
 
     store.customers.push(this)
   }
+
+  totalSpent() {
+    
+  }
 }
 
 class Employer {
