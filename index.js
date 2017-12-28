@@ -1,4 +1,4 @@
-let store = {drivers: [], customers: []}
+let store = {customers: []}
 
 let mealId = 0
 
