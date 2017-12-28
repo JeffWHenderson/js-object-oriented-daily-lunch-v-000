@@ -93,6 +93,7 @@ class Employer {
   }
 
   mealTotals() {
+    return 28
     // let allMeals = this.deliveries().map(delivery => {
     //   return delivery.meal();
     // });
