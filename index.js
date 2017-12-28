@@ -19,6 +19,12 @@ let deliveryId = 0
           return customer.id === this.customerId
         })
       }
+
+      meal() {
+        return store.meals.find(meal => {
+          return meal.id = this.mealId
+        })
+      }
     }
 
 class Customer {
