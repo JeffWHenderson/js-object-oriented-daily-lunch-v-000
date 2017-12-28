@@ -89,6 +89,20 @@ class Employer {
     store.employers.push(this)
   }
 
+  mealTotals() {
+    let allMeals = this.deliveries().map(delivery => {
+      return delivery.meal();
+    });
+    let summaryObject = {};
+    allMeals.forEach(function(meal) {
+      summaryObject[meal.id] = 0;
+    });
+    allMeals.forEach(function(meal) {
+      summaryObject[meal.id] += 1;
+    });
+    return summaryObject;
+  }
+
   employees(){
     return store.customers.filter(customer => {
       return customer.employerId === this.id
