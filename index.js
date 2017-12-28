@@ -14,6 +14,9 @@ let deliveryId = 0
         store.deliveries.push(this)
       }
 
+      customer() {
+        store.customers
+      }
     }
 
 class Customer {
