@@ -31,4 +31,10 @@ class Meal {
     
     store.meals.push(this)
   }
+
+class Delivery {
+  constructor(meal, customer) {
+    this.meal = meal
+    this.customer = customer
+  }
 }
