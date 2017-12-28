@@ -5,27 +5,27 @@ let customerId = 0
 let employerId = 0
 let deliveryId = 0
 
-    class Delivery {
-      constructor(meal = {}, customer = {}) {
-        this.id = ++deliveryId
-        this.mealId = meal.id
-        this.customerId = customer.id
+class Delivery {
+  constructor(meal = {}, customer = {}) {
+    this.id = ++deliveryId
+    this.mealId = meal.id
+    this.customerId = customer.id
 
-        store.deliveries.push(this)
-      }
+    store.deliveries.push(this)
+  }
 
-      customer() {
-        return store.customers.find(customer => {
-          return customer.id === this.customerId
-        })
-      }
+  customer() {
+    return store.customers.find(customer => {
+      return customer.id === this.customerId
+    })
+  }
 
-      meal() {
-        return store.meals.find(meal => {
-          return meal.id = this.mealId
-        })
-      }
-    }
+  meal() {
+    return store.meals.find(meal => {
+      return meal.id = this.mealId
+    })
+  }
+}
 
 class Customer {
   constructor(name) {
@@ -62,5 +62,9 @@ class Meal {
     return store.meals.sort(function(meal1, meal2){
       return meal1.price < meal2.price
     })
+  }
+
+  deliveries(){
+    
   }
 }
