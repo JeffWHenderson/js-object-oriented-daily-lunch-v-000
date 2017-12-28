@@ -96,8 +96,10 @@ class Employer {
   }
 
   deliveries(){
-    return this.employees().map(employee => {
-      return employee.id === store.deliveries.customerId
-    })
+    let allDeliveries = this.employees().map(employee => {
+      return employee.deliveries();
+    });
+    let merged = [].concat.apply([], allDeliveries);
+    return merged;
   }
 }
