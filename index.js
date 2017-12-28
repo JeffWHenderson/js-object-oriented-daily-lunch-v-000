@@ -24,9 +24,9 @@ class Employer {
 }
 
 class Meal {
-  constructor(name, price) {
+  constructor(title, price) {
     this.id = ++mealId
-    this.name = name
+    this.title = title
     this.price = price
     
     store.meals.push(this)
