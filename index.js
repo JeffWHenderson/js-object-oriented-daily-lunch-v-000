@@ -89,6 +89,6 @@ class Employer {
   }
 
   employees(){
-    
+    return store.customers
   }
 }
